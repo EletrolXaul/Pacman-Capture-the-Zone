@@ -1,0 +1,9 @@
+Il progetto consiste in una mappa nella quale un'IA impara a muoversi per raggiungere l'obiettivo più vicino;
+l'attività di apprendimento è eseguita tramite un algoritmo di Reinforcement Learning (RL):
+L'agente esegue un azione che verrà ricompensata (in caso di arrivo ad uno degli obiettivi) o penalizzata (per esempio in caso che vada incontro ad un muro)
+e in seguito, tramite un modello decisionale, migliora la scelta del percorso da eseguire.
+Ogni episodio di training finisce quando raggiunge uno dei quattro obiettivi (WIN) oppure quando riceve troppe penalità (LOSE).
+
+Il programma termina quando l'agente riesce a raggiungere l'obiettivo più vicino indipendentemente da quale sia la cella di partenza,
+con approssimatamente un win-rate del 100%;
+inoltre restituisce una mappa che registra il miglior percorso per arrivare a ciascuno degli obiettivi e un grafico che mostra la capacità di apprendimento dell'agente.
