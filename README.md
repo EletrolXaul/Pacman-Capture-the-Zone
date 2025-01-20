@@ -10,13 +10,13 @@ Un progetto di Reinforcement Learning dove un agente Pacman impara a navigare in
 - Training configurabile con diversi algoritmi RL
 
 ## 🧠 Algoritmi Implementati
-- **Q-Learning**
+- Q-Learning
   - Implementazione base 
   - Versione con Eligibility Trace
-- **SARSA**
+- SARSA
   - Implementazione base
   - Versione con Eligibility Trace
-- **Deep Q-Network**
+- Deep Q-Network
   - Con Experience Replay
   - Salvataggio e caricamento modelli
 
@@ -35,48 +35,54 @@ Un progetto di Reinforcement Learning dove un agente Pacman impara a navigare in
 - pip (gestore pacchetti Python)
 
 ### Setup Ambiente Virtuale (Consigliato)
-```bash
+bash
 # Windows
 python -m venv venv
 .\venv\Scripts\activate
 
+
+bash
 # Linux/Mac 
 python -m venv venv
 source venv/bin/activate
 
+
 ### Installazione Dipendenze
-```bash
+bash
 # Aggiorna pip
 python -m pip install --upgrade pip
 
 # Installa librerie richieste
 pip install numpy matplotlib tensorflow keras
 
+
 ###💻 Utilizzo
 Avvia il Training
-```bash
+bash
 python main.py
+
 
 ### Modifica Algoritmo
 In main.py, modifica:
-```bash
+bash
 test = Test.Q_LEARNING     # Q-Learning base
 #test = Test.SARSA        # SARSA
 #test = Test.DEEP_Q       # Deep Q-Network
 
+
 ### 📊 Visualizzazione
-- **Mappa del labirinto in tempo reale**
--**Heatmap delle azioni ottimali**
--**Grafici di performance:**
+- Mappa del labirinto in tempo reale
+-Heatmap delle azioni ottimali
+-Grafici di performance:
   - Win rate per episodio
   - Reward cumulativo
   - Comparazione algoritmi
 ###👥 Autori
-Celani
-Pizzoli
+- Paolo Celani
+- Matteo Pizzoli
+
 ###📄 Licenza
 MIT License
 
 ###🤝 Contributing
-Le pull request sono benvenute. Per modifiche importanti, apri prima un issue per discutere cosa vorresti cambiare.
-
+Le pull request sono benvenute. Per modifiche importanti, apri prima un issue per discutere cosa vorresti cambiare.
