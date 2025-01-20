@@ -35,20 +35,20 @@ Un progetto di Reinforcement Learning dove un agente Pacman impara a navigare in
 - pip (gestore pacchetti Python)
 
 ### Setup Ambiente Virtuale (Consigliato)
-bash
+'''bash
 # Windows
 python -m venv venv
 .\venv\Scripts\activate
 
 
-bash
+'''bash
 # Linux/Mac 
 python -m venv venv
 source venv/bin/activate
 
 
 ### Installazione Dipendenze
-bash
+'''bash
 # Aggiorna pip
 python -m pip install --upgrade pip
 
@@ -58,13 +58,13 @@ pip install numpy matplotlib tensorflow keras
 
 ###💻 Utilizzo
 Avvia il Training
-bash
+'''bash
 python main.py
 
 
 ### Modifica Algoritmo
 In main.py, modifica:
-bash
+'''bash
 test = Test.Q_LEARNING     # Q-Learning base
 #test = Test.SARSA        # SARSA
 #test = Test.DEEP_Q       # Deep Q-Network
@@ -79,7 +79,7 @@ test = Test.Q_LEARNING     # Q-Learning base
   - Comparazione algoritmi
 ###👥 Autori
 - Paolo Celani
-- Matteo Pizzoli
+- Emanuele Pizzoli
 
 ###📄 Licenza
 MIT License
