@@ -1,27 +1,45 @@
-# Pacman Capture the Zone
+# 🎮 Pacman Capture the Zone
 
-Un progetto di Reinforcement Learning dove un agente Pacman impara a navigare in un labirinto per raggiungere gli obiettivi.
+## 📝 Descrizione
+Un progetto di Reinforcement Learning dove un agente Pacman impara a navigare in un labirinto per raggiungere gli obiettivi in modo ottimale. Il progetto utilizza diversi algoritmi di apprendimento per rinforzo (RL) per insegnare all'agente come muoversi efficacemente nel labirinto.
 
-## Descrizione
+## 🎯 Funzionalità
+- L'agente deve raggiungere uno dei quattro obiettivi disponibili
+- Sistema di apprendimento basato su reward/penalty
+- Visualizzazione real-time del processo di apprendimento
+- Training configurabile con diversi algoritmi RL
 
-Questo progetto implementa un sistema di apprendimento per rinforzo (RL) dove un agente Pacman deve imparare a muoversi in un labirinto per raggiungere uno dei quattro obiettivi disponibili. L'agente utilizza diversi algoritmi di RL come Q-Learning, SARSA e Deep Q-Network per imparare la strategia ottimale.
+## 🧠 Algoritmi Implementati
+- **Q-Learning**
+  - Implementazione base 
+  - Versione con Eligibility Trace
+- **SARSA**
+  - Implementazione base
+  - Versione con Eligibility Trace
+- **Deep Q-Network**
+  - Con Experience Replay
+  - Salvataggio e caricamento modelli
 
-### Caratteristiche principali:
-- Implementazione di diversi algoritmi RL:
-  - Q-Learning
-  - Q-Learning con Eligibility Trace
-  - SARSA
-  - SARSA con Eligibility Trace 
-  - Deep Q-Network con Experience Replay
-- Sistema di reward/penalty:
-  - Reward positivo (+10.0) per raggiungimento obiettivo
-  - Penalità per movimento (-0.05)
-  - Penalità per celle già visitate (-0.25)
-  - Penalità per movimenti impossibili (-0.75)
-- Visualizzazione grafica dell'apprendimento
-- Analisi delle performance con grafici di win rate e reward cumulativo
+## 💎 Sistema di Reward/Penalty
+| Azione | Reward/Penalty |
+|--------|---------------|
+| Raggiungimento obiettivo | +10.0 |
+| Movimento base | -0.05 |
+| Cella già visitata | -0.25 |
+| Movimento impossibile | -0.75 |
 
-## Requisiti
+## 🚀 Installazione
 
-```python
-pip install numpy matplotlib tensorflow keras
+### Prerequisiti
+- Python 3.7-3.11
+- pip (gestore pacchetti Python)
+
+### Setup Ambiente Virtuale (Consigliato)
+```bash
+# Windows
+python -m venv venv
+.\venv\Scripts\activate
+
+# Linux/Mac 
+python -m venv venv
+source venv/bin/activate
